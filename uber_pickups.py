@@ -38,4 +38,5 @@ with st.form("my_form"):
 
   if submitted:
     response = fetch(session, 'https://firstappvba.azurewebsites.net/predict', new_measurement)
+    #response = fetch(session, 'http://127.0.0.1:8000/predict', new_measurement)
     st.write(response.content)
